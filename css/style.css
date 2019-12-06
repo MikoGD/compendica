@@ -1,0 +1,258 @@
+:root {
+  --color-primary-light: #487296;
+  --color-primary: #3B5C79;
+  --color-secondary: #893B42;
+  --color-secondary-light: #A9444D;
+  --color-white: #fff;
+  --color-grey: #222;
+  --color-black: #000;
+  --color-black-1: rgba(0, 0, 0, .5);
+  --text-shadow: 0 .1rem .1rem var(--color-black);
+  --input-shadow: 0 .1rem .2rem var(--color-black-1);
+  --input-hover-shadow: 0 .5rem .4rem var(--color-black-1);
+  --search-shadow: 0 0 .2rem var(--color-black-1); }
+
+.u-left-pos {
+  justify-content: flex-start !important; }
+
+.u-margin-top-xs {
+  margin-top: 2rem !important; }
+
+.u-margin-top-s {
+  margin-top: 4rem !important; }
+
+.u-margin-top-m {
+  margin-top: 6rem !important; }
+
+.u-margin-top-n-s {
+  margin-top: -4rem !important; }
+
+.u-margin-top-n-m {
+  margin-top: -6rem !important; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Raleway';
+  line-height: 1.7;
+  color: var(--color-white); }
+
+.heading-primary {
+  font-family: serif;
+  font-size: 10rem;
+  letter-spacing: .5rem;
+  text-transform: uppercase;
+  text-shadow: 0 0.3rem 0.1rem #000; }
+
+.heading-secondary {
+  font-family: serif;
+  font-size: 5rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  text-shadow: 0 0.175rem 0 #000; }
+
+.heading-tertiary {
+  color: var(--color-black);
+  font-family: serif;
+  font-size: 2.5rem;
+  text-transform: uppercase; }
+
+.book {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 25rem;
+  box-shadow: var(--search-shadow); }
+  .book__title {
+    color: var(--color-black);
+    font-size: 4rem; }
+  .book__author {
+    color: var(--color-black);
+    font-size: 2rem; }
+  .book__reserved {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14rem;
+    height: 3rem;
+    color: var(--color-white);
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right bottom, #893B42, #A9444D);
+    border-radius: 2rem;
+    box-shadow: var(--input-shadow); }
+
+.btn {
+  width: 15rem;
+  height: 4rem;
+  color: var(--color-white);
+  font-family: 'Raleway';
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 2rem;
+  box-shadow: var(--input-shadow);
+  cursor: pointer;
+  transition: all .2s;
+  backface-visibility: hidden; }
+  .btn__link, .btn__link:link, .btn__link:visited {
+    color: var(--color-white);
+    text-decoration: none; }
+  .btn:hover {
+    transform: translateY(-0.1rem);
+    box-shadow: var(--input-hover-shadow); }
+  .btn:active {
+    transform: translateY(0);
+    box-shadow: var(--input-shadow); }
+  .btn:focus {
+    outline: none; }
+  .btn--submit {
+    background-image: linear-gradient(to right bottom, #3B5C79, #487296); }
+  .btn--sign-up {
+    background-image: linear-gradient(to right bottom, #893B42, #A9444D); }
+  .btn--back {
+    background-image: linear-gradient(to right bottom, #3B5C79, #487296); }
+  .btn--reserve {
+    width: 14rem;
+    height: 3rem;
+    font-size: 2rem;
+    background-image: linear-gradient(to right bottom, #3B5C79, #487296); }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .form__label {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: var(--text-shadow); }
+    .form__label:not(:first-child) {
+      margin-top: 2rem; }
+  .form__input {
+    width: 40rem;
+    height: 2.5rem;
+    padding: .25rem;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: .5rem;
+    box-shadow: var(--input-shadow); }
+  .form__btn {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40rem; }
+  .form__error {
+    color: red;
+    font-size: 1.5rem;
+    text-shadow: var(--text-shadow); }
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: auto;
+  background-image: url("../img/hero.jpg");
+  background-size: cover; }
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5rem;
+  padding: 0 7.5rem;
+  background-color: white;
+  box-shadow: 0 0.2rem 0.2rem rgba(0, 0, 0, 0.2); }
+  .navigation__form {
+    display: flex; }
+  .navigation__search {
+    width: 100rem;
+    height: 2.5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: var(--search-shadow); }
+  .navigation__btn-search {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    padding: 1rem;
+    border: none;
+    box-shadow: var(--search-shadow);
+    cursor: pointer; }
+  .navigation__icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20rem; }
+  .navigation__icon {
+    width: 2.5rem;
+    height: 2.5rem; }
+
+.active {
+  fill: var(--color-secondary); }
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(to right bottom, #3B5C79, #487296); }
+  .main__content {
+    width: 100rem;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--color-white); }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  width: auto;
+  height: 5rem;
+  background-color: var(--color-grey); }
+  .footer__copyright {
+    font-size: 1rem; }
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 108rem;
+  height: 90%;
+  padding: 5rem 8rem;
+  background-image: linear-gradient(to right bottom, rgba(59, 92, 121, 0.8), rgba(72, 114, 150, 0.8)); }
+  .sign-up__form {
+    display: flex;
+    flex-direction: column; }
+
+.form__input-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 92rem; }
+
+.form__left {
+  display: flex;
+  flex-direction: column; }
+
+.form__right {
+  display: flex;
+  flex-direction: column; }
+
+.form__label:not(:first-child) {
+  margin-top: 2rem; }

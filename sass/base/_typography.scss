@@ -1,0 +1,29 @@
+body {
+    font-family: 'Raleway';
+    line-height: 1.7;
+    color: var(--color-white)
+}
+
+.heading-primary {
+    font-family: serif;
+    font-size: 10rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    
+    text-shadow: 0 .3rem .1rem $color-black;
+}
+
+.heading-secondary {
+    font-family: serif;
+    font-size: 5rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    text-shadow: 0 .175rem 0 $color-black;
+}
+
+.heading-tertiary {
+    color: var(--color-black);
+    font-family: serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}

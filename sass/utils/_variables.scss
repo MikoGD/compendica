@@ -1,0 +1,30 @@
+$color-primary-light: #487296;
+$color-primary: #3B5C79;
+
+$color-secondary: #893B42;
+$color-secondary-light: #A9444D;
+
+$color-black: #000;
+$color-black-1: rgba($color-black, .8);
+
+:root {
+    // COLORS
+    --color-primary-light: #487296;
+    --color-primary: #3B5C79;
+
+    --color-secondary: #893B42;
+    --color-secondary-light: #A9444D;
+
+    --color-white: #fff;
+
+    --color-grey: #222;
+
+    --color-black: #000;
+    --color-black-1: rgba(0, 0, 0, .5);
+
+    // SHADOWS
+    --text-shadow: 0 .1rem .1rem var(--color-black);
+    --input-shadow: 0 .1rem .2rem var(--color-black-1);
+    --input-hover-shadow: 0 .5rem .4rem var(--color-black-1);
+    --search-shadow: 0 0 .2rem var(--color-black-1);
+}

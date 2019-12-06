@@ -1,0 +1,45 @@
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    width: 108rem;
+    height: 90%;
+    padding: 5rem 8rem;
+
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, .8),
+        rgba($color-primary-light, .8));
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.form {
+    &__input-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        width: 92rem;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__label {
+        &:not(:first-child) {
+            margin-top: 2rem;
+        }
+    }
+}
